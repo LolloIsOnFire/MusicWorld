@@ -6,89 +6,236 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Artisti - Music World</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="player.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="main-content">
-    <!-- Header con logo e menu di navigazione -->
-    <header>
-        <div class="logo">
-            <h1>Music World</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="artisti.html">Artisti</a></li>
-                <li><a href="contatti.html">Contatti</a></li>
-            </ul>
-        </nav>
-    </header>
+        <!-- Header con logo e menu di navigazione -->
+        <header>
+            <div class="logo">
+                <h1>Music World</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="artisti.html">Artisti</a></li>
+                    <li><a href="contatti.html">Contatti</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <!-- Sezione principale -->
-    <section class="hero">
-        <h2>Artisti di Rilievo</h2>
-        <p>Scopri i migliori artisti del panorama musicale!</p>
-    </section>
+        <!-- Sezione principale -->
+        <section class="hero">
+            <h2>Artisti di Rilievo</h2>
+            <p>Scopri i migliori artisti del panorama musicale!</p>
+        </section>
 
-    <!-- Sezione Artisti -->
-    <section class="artisti-section">
-        <h2>Top Artisti</h2>
-        <div class="artisti-grid">
-            <div class="artista">
-                <a href="https://it.wikipedia.org/wiki/Drake_(rapper)" target="_blank">
-                <img src="img/Drake.png" alt="Artista 1">
-                </a>
-                <p>Drake</p>
-                <span>Genere: Hip-Hop, Rap</span>
-            </div>
-            <div class="artista">
-                <a href="https://it.wikipedia.org/wiki/Lil_Yachty" target="_blank">
-                <img src="img/Lil Yachty.jpg" alt="Artista 2">
-                </a>
-                <p>Lil Yachty</p>
-                <span>Genere: Hip-Hop, Trap</span>
-            </div>
-            <div class="artista">
-                <a href="https://it.wikipedia.org/wiki/Travis_Scott" target="_blank">
-                <img src="img/Travis Scott.jpg" alt="Artista 3">
-                </a>
-                <p>Travis Scott</p>
-                <span>Genere: Hip-Hop, Rap</span>
-            </div>
-            <div class="artista">
-                <a href="https://it.wikipedia.org/wiki/Stormzy" target="_blank">
-                <img src="img/Stormzy.jpg" alt="Artista 4">
-                </a>
-                <p>Stormzy</p>
-                <span>Genere: Grime, Rap</span>
-            </div>
-            <div class="artista">
-                <a href="https://famezip.com/creators/r2r-moe/" target="_blank">
-                <img src="img/R2R MOE.jpg" alt="Artista 5">
-                </a>
-                <p>R2R MOE</p>
-                <span>Genere: Trap</span>
-            </div>
-            <div class="artista">
-                <a href="https://it.wikipedia.org/wiki/Lil_Tecca" target="_blank">
-                <img src="img/Lil Tecca.jpg" alt="Artista 6">
-                </a>
-                <p>Lil Tecca</p>
-                <span>Genere: Hip-Hop, Trap</span>
-            </div>
-        </div>
-    </section>
+        <!-- Sezione Artisti -->
+        <section class="artisti-section">
+            <h2>Top Artisti</h2>
+            <div class="artisti-grid">
+                <!-- Drake -->
+                <div class="artista">
+                    <img src="img/Drake.png" alt="Drake" class="artist-image">
+                    <p class="artist-name">Drake</p>
+                    <span class="artist-genre">Hip-Hop, Rap</span>
+                    <div class="player">
+                        <div class="player-content">
+                            <div class="track-info">
+                                <div class="track-name">ITS UP</div>
+                                <div class="track-artist">Drake</div>
+                            </div>
+                            <div class="controls">
+                                <button class="play-pause"><i class="fas fa-play"></i></button>
+                                <div class="progress-container">
+                                    <div class="progress-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                    <div class="time-info">
+                                        <span class="current-time">0:00</span>
+                                        <span class="total-time">0:00</span>
+                                    </div>
+                                </div>
+                                <div class="volume-container">
+                                    <i class="fas fa-volume-up volume-icon"></i>
+                                    <input type="range" class="volume-slider" min="0" max="100" value="100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- Sezione contatti -->
-    <section class="contatti">
-        <h3>Contattaci</h3>
-        <p>Email: <a href="mailto:info@musicworld.com">info@musicworld.com</a></p>
-        <p>Telefono: +39 123 456 7890</p>
-    </section>
-</div>
+                <!-- Lil Yachty -->
+                <div class="artista">
+                    <img src="img/Lil Yachty.jpg" alt="Lil Yachty" class="artist-image">
+                    <p class="artist-name">Lil Yachty</p>
+                    <span class="artist-genre">Hip-Hop, Trap</span>
+                    <div class="player">
+                        <div class="player-content">
+                            <div class="track-info">
+                                <div class="track-name">Sorry Not Sorry</div>
+                                <div class="track-artist">Lil Yachty</div>
+                            </div>
+                            <div class="controls">
+                                <button class="play-pause"><i class="fas fa-play"></i></button>
+                                <div class="progress-container">
+                                    <div class="progress-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                    <div class="time-info">
+                                        <span class="current-time">0:00</span>
+                                        <span class="total-time">0:00</span>
+                                    </div>
+                                </div>
+                                <div class="volume-container">
+                                    <i class="fas fa-volume-up volume-icon"></i>
+                                    <input type="range" class="volume-slider" min="0" max="100" value="100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Travis Scott -->
+                <div class="artista">
+                    <img src="img/Travis Scott.jpg" alt="Travis Scott" class="artist-image">
+                    <p class="artist-name">Travis Scott</p>
+                    <span class="artist-genre">Hip-Hop, Rap</span>
+                    <div class="player">
+                        <div class="player-content">
+                            <div class="track-info">
+                                <div class="track-name">Drugs You Should Try It</div>
+                                <div class="track-artist">Travis Scott</div>
+                            </div>
+                            <div class="controls">
+                                <button class="play-pause"><i class="fas fa-play"></i></button>
+                                <div class="progress-container">
+                                    <div class="progress-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                    <div class="time-info">
+                                        <span class="current-time">0:00</span>
+                                        <span class="total-time">0:00</span>
+                                    </div>
+                                </div>
+                                <div class="volume-container">
+                                    <i class="fas fa-volume-up volume-icon"></i>
+                                    <input type="range" class="volume-slider" min="0" max="100" value="100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stormzy -->
+                <div class="artista">
+                    <img src="img/Stormzy.jpg" alt="Stormzy" class="artist-image">
+                    <p class="artist-name">Stormzy</p>
+                    <span class="artist-genre">Grime, Rap</span>
+                    <div class="player">
+                        <div class="player-content">
+                            <div class="track-info">
+                                <div class="track-name">BACKBONE</div>
+                                <div class="track-artist">Stormzy</div>
+                            </div>
+                            <div class="controls">
+                                <button class="play-pause"><i class="fas fa-play"></i></button>
+                                <div class="progress-container">
+                                    <div class="progress-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                    <div class="time-info">
+                                        <span class="current-time">0:00</span>
+                                        <span class="total-time">0:00</span>
+                                    </div>
+                                </div>
+                                <div class="volume-container">
+                                    <i class="fas fa-volume-up volume-icon"></i>
+                                    <input type="range" class="volume-slider" min="0" max="100" value="100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- R2R MOE -->
+                <div class="artista">
+                    <img src="img/R2R MOE.jpg" alt="R2R MOE" class="artist-image">
+                    <p class="artist-name">R2R MOE</p>
+                    <span class="artist-genre">Trap</span>
+                    <div class="player">
+                        <div class="player-content">
+                            <div class="track-info">
+                                <div class="track-name">9 LIVES</div>
+                                <div class="track-artist">R2R MOE</div>
+                            </div>
+                            <div class="controls">
+                                <button class="play-pause"><i class="fas fa-play"></i></button>
+                                <div class="progress-container">
+                                    <div class="progress-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                    <div class="time-info">
+                                        <span class="current-time">0:00</span>
+                                        <span class="total-time">0:00</span>
+                                    </div>
+                                </div>
+                                <div class="volume-container">
+                                    <i class="fas fa-volume-up volume-icon"></i>
+                                    <input type="range" class="volume-slider" min="0" max="100" value="100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lil Tecca -->
+                <div class="artista">
+                    <img src="img/Lil Tecca.jpg" alt="Lil Tecca" class="artist-image">
+                    <p class="artist-name">Lil Tecca</p>
+                    <span class="artist-genre">Hip-Hop, Trap</span>
+                    <div class="player">
+                        <div class="player-content">
+                            <div class="track-info">
+                                <div class="track-name">BAD TIME</div>
+                                <div class="track-artist">Lil Tecca</div>
+                            </div>
+                            <div class="controls">
+                                <button class="play-pause"><i class="fas fa-play"></i></button>
+                                <div class="progress-container">
+                                    <div class="progress-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                    <div class="time-info">
+                                        <span class="current-time">0:00</span>
+                                        <span class="total-time">0:00</span>
+                                    </div>
+                                </div>
+                                <div class="volume-container">
+                                    <i class="fas fa-volume-up volume-icon"></i>
+                                    <input type="range" class="volume-slider" min="0" max="100" value="100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sezione contatti -->
+        <section class="contatti">
+            <h3>Contattaci</h3>
+            <p>Email: <a href="mailto:info@musicworld.com">info@musicworld.com</a></p>
+            <p>Telefono: +39 123 456 7890</p>
+        </section>
+    </div>
+    
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 Music World. Tutti i diritti riservati.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>

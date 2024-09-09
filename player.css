@@ -1,0 +1,200 @@
+:root {
+    --primary-color: #1DB954;
+    --background-color: rgba(25, 20, 20, 0.9);
+    --text-color: #fff;
+    --secondary-text-color: #b3b3b3;
+    --progress-bar-color: #535353;
+}
+
+.artista {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.artista:hover {
+    transform: scale(1.05);
+}
+
+.artist-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.artist-name {
+    font-weight: bold;
+    margin: 0.625rem 0 0.3125rem;
+}
+
+.artist-genre {
+    font-size: 0.9em;
+    color: var(--secondary-text-color);
+}
+
+.player {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: bottom 0.3s ease;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.artista:hover .player {
+    bottom: 0;
+}
+
+.player-content {
+    padding: 0.9375rem;
+}
+
+.track-info {
+    margin-bottom: 0.625rem;
+}
+
+.track-name {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.track-artist {
+    font-size: 0.9em;
+    color: var(--secondary-text-color);
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.play-pause {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.play-pause:hover {
+    transform: scale(1.1);
+}
+
+.progress-container {
+    flex-grow: 1;
+    margin: 0 0.9375rem;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 0.25rem;
+    background-color: var(--progress-bar-color);
+    border-radius: 0.125rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.progress {
+    width: 0;
+    height: 100%;
+    background-color: var(--primary-color);
+    transition: width 0.1s linear;
+}
+
+.time-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+    color: var(--secondary-text-color);
+    margin-top: 0.3125rem;
+}
+
+.volume-container {
+    display: flex;
+    align-items: center;
+}
+
+.volume-icon {
+    margin-right: 0.3125rem;
+    cursor: pointer;
+}
+
+.volume-slider {
+    -webkit-appearance: none;
+    width: 4.375rem;
+    height: 0.25rem;
+    border-radius: 0.125rem;
+    background: var(--progress-bar-color);
+    outline: none;
+}
+
+.volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background: var(--text-color);
+    cursor: pointer;
+}
+
+/* Breakpoint per dispositivi molto piccoli (max-width: 576px) */
+@media (max-width: 575.98px) {
+    .player-content {
+        padding: 0.5rem;
+    }
+
+    .track-info {
+        margin-bottom: 0.3125rem;
+    }
+
+    .play-pause {
+        font-size: 1em;
+    }
+
+    .progress-container {
+        margin: 0 0.3125rem;
+    }
+
+    .volume-slider {
+        width: 2.5rem;
+    }
+
+    .time-info {
+        font-size: 0.7em;
+    }
+}
+
+/* Breakpoint per dispositivi >= 576px */
+@media (min-width: 576px) {
+
+    .player-content {
+        padding: 0.5rem;
+    }
+
+    .track-info {
+        margin-bottom: 0.3125rem;
+    }
+
+    .play-pause {
+        font-size: 1em;
+    }
+
+    .progress-container {
+        margin: 0 0.3125rem;
+    }
+
+    .volume-slider {
+        width: 2.5rem;
+    }
+
+    .time-info {
+        font-size: 0.7em;
+    }
+}
+
