@@ -190,6 +190,34 @@
     }
 
     .volume-slider {
+        width: 3.8rem;
+    }
+
+    .time-info {
+        font-size: 0.7em;
+    }
+}
+
+/* Breakpoint per dispositivi >= 627px */
+@media (min-width: 627px) {
+
+    .player-content {
+        padding: 0.5rem;
+    }
+
+    .track-info {
+        margin-bottom: 0.3125rem;
+    }
+
+    .play-pause {
+        font-size: 1em;
+    }
+
+    .progress-container {
+        margin: 0 0.3125rem;
+    }
+
+    .volume-slider {
         width: 2.5rem;
     }
 
@@ -198,3 +226,115 @@
     }
 }
 
+/* Breakpoint per dispositivi >= 768px */
+@media (min-width: 768px) {
+    
+    .player-content {
+        padding: 0.5rem;
+    }
+
+    .track-info {
+        margin-bottom: 0.3125rem;
+    }
+
+    .play-pause {
+        font-size: 1em;
+    }
+
+    .progress-container {
+        margin: 0 0.3125rem;
+    }
+
+    .volume-slider {
+        width: 3.5rem;
+    }
+
+    .time-info {
+        font-size: 0.7em;
+    }
+}
+
+/* Breakpoint per dispositivi >= 992px */
+@media (min-width: 992px) {
+    
+    .player-content {
+        padding: 0.5rem;
+    }
+
+    .track-info {
+        margin-bottom: 0.3125rem;
+    }
+
+    .play-pause {
+        font-size: 1em;
+    }
+
+    .progress-container {
+        margin: 0 0.3125rem;
+    }
+
+    .volume-slider {
+        width: 2.6rem;
+    }
+
+    .time-info {
+        font-size: 0.7em;
+    }
+}
+
+/* Breakpoint per dispositivi >= 1200px */
+@media (min-width: 1200px) {
+    
+    .player-content {
+        padding: 0.5rem;
+    }
+
+    .track-info {
+        margin-bottom: 0.3125rem;
+    }
+
+    .play-pause {
+        font-size: 1em;
+    }
+
+    .progress-container {
+        margin: 0 0.3125rem;
+    }
+
+    .volume-slider {
+        width: 2.7rem;
+    }
+
+    .time-info {
+        font-size: 0.7em;
+    }
+
+}
+
+/* Breakpoint per dispositivi >= 1400px */
+@media (min-width: 1400px) {
+    
+    .player-content {
+        padding: 0.5rem;
+    }
+
+    .track-info {
+        margin-bottom: 0.3125rem;
+    }
+
+    .play-pause {
+        font-size: 1em;
+    }
+
+    .progress-container {
+        margin: 0 0.3125rem;
+    }
+
+    .volume-slider {
+        width: 3rem;
+    }
+
+    .time-info {
+        font-size: 0.7em;
+    }
+}
