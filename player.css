@@ -162,7 +162,15 @@
     }
 
     .volume-slider {
-        width: 2.5rem;
+        display: none;
+    }
+
+    .volume-icon {
+        display: none;
+    }
+
+    .volume-container {
+        display: none;
     }
 
     .time-info {
