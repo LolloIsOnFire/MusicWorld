@@ -185,6 +185,7 @@ nav ul li a:hover {
 }
 
 /* Sezione contatti ( Pagina )*/
+
 .contatti {
     padding: 3.75rem; /* 60px */
     text-align: center;
@@ -251,6 +252,53 @@ button[type="submit"]:hover {
     background-color: #e65c00;
 }
 
+.contact-form input:invalid,
+.contact-form textarea:invalid {
+    border-color: rgb(201, 197, 197);
+    box-shadow: none;
+}
+
+.contact-form input:invalid:required,
+.contact-form textarea:invalid:required {
+    box-shadow: none;
+}
+
+.contact-form input:invalid:focus,
+.contact-form textarea:invalid:focus {
+    outline: none;
+    border-color: red;
+    box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.2);
+}
+
+.contact-form input[type="number"]::-webkit-inner-spin-button,
+.contact-form input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form-group input.highlight,
+.form-group textarea.highlight {
+    border-color: red;
+    animation: pulse 2s ease-out;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 0, 0, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+    }
+}
+
+.form-group input.success,
+.form-group textarea.success {
+    border-color: green;
+    transition: border-color 0.3s ease;
+}
 
 /* Sezione contatti */
 .contatti {
